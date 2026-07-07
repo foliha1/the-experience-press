@@ -162,7 +162,7 @@ function Invite({ t }: { t: TreatmentId }) {
                 fontWeight: t === "cadence" ? 400 : 350,
               }}
               transition={spring}
-              className="font-display text-[1.35rem] leading-[1.15] md:text-[1.6rem]"
+              className="font-display text-[0.95rem] leading-[1.15] sm:text-[1.35rem] md:text-[1.6rem]"
             >
               An evening
               <br />
