@@ -1,0 +1,52 @@
+import { Reveal, RevealItem } from "../reveal";
+import { useState } from "react";
+
+export function Invitation() {
+  const [hover, setHover] = useState(false);
+  return (
+    <section className="px-6 pt-24 pb-16 md:px-16 md:pt-40 md:pb-20">
+      <div className="mx-auto max-w-3xl">
+        <Reveal className="flex flex-col gap-10" amount={0.2}>
+          <RevealItem className="flex items-center gap-4">
+            <span className="numeral">№ 06</span>
+            <span aria-hidden className="h-px w-16 bg-rule" />
+            <span className="label">A short letter</span>
+          </RevealItem>
+
+          <RevealItem as="p" className="font-display text-2xl leading-[1.5] md:text-[1.9rem] md:leading-[1.4]">
+            If you are building a gathering that ought to be remembered by name — and you
+            suspect, quietly, that the design is what will make or unmake it — write to us.
+            A thirty-minute call, no deck. We will tell you honestly whether the Sprint is
+            the right shape for your weekend, and, if it isn&rsquo;t, who you should speak to
+            instead.
+          </RevealItem>
+
+          <RevealItem className="flex flex-col gap-8">
+            <a
+              href="mailto:hello@oleeha.co?subject=Experience%20Design%20Sprint%20—%20Fit%20call"
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+              onFocus={() => setHover(true)}
+              onBlur={() => setHover(false)}
+              className={`link-spot inline-flex min-h-11 items-center gap-3 font-display text-2xl md:text-3xl ${hover ? "link-spot-hover" : ""}`}
+            >
+              Write to us
+              <span aria-hidden className="text-vermilion">→</span>
+            </a>
+
+            <p className="font-display italic text-lg text-taupe">
+              — Oleeha &amp; Co.
+            </p>
+          </RevealItem>
+        </Reveal>
+      </div>
+
+      <div className="mx-auto mt-24 max-w-6xl">
+        <div className="flex flex-col gap-3 border-t border-rule pt-8 md:flex-row md:items-center md:justify-between">
+          <p className="numeral">Oleeha &amp; Co. · Atlanta · Est. MMXVIII</p>
+          <p className="numeral">Set in Fraunces &amp; Inter Tight · Printed for the web</p>
+        </div>
+      </div>
+    </section>
+  );
+}
