@@ -141,7 +141,7 @@ function Surface({
 function Invite({ t }: { t: TreatmentId }) {
   return (
     <Surface label="I. Invite" ratio="5 × 7 in">
-      <div className="relative aspect-[5/7] p-6 md:p-8">
+      <div className="relative aspect-[5/7] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-start justify-between">
             <Emblem active={t === "emblem"} size={36} />
@@ -162,7 +162,7 @@ function Invite({ t }: { t: TreatmentId }) {
                 fontWeight: t === "cadence" ? 400 : 350,
               }}
               transition={spring}
-              className="font-display text-[1.35rem] leading-[1.15] md:text-[1.6rem]"
+              className="font-display text-[0.95rem] leading-[1.15] sm:text-[1.35rem] md:text-[1.6rem]"
             >
               An evening
               <br />
@@ -190,7 +190,7 @@ function Invite({ t }: { t: TreatmentId }) {
 function Signage({ t }: { t: TreatmentId }) {
   return (
     <Surface label="II. Signage" ratio="36 × 24 in">
-      <div className="relative aspect-[3/2] p-6 md:p-8">
+      <div className="relative aspect-[3/2] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-start justify-between">
             <span className="label">This way</span>
@@ -203,10 +203,10 @@ function Signage({ t }: { t: TreatmentId }) {
               transition={spring}
               className="font-display leading-[0.95]"
             >
-              <div className="text-[1.75rem] tracking-[-0.02em] md:text-[2.5rem]">
+              <div className="text-[1rem] tracking-[-0.02em] sm:text-[1.35rem] md:text-[2.5rem]">
                 The Great
               </div>
-              <div className="text-[1.75rem] italic tracking-[-0.02em] md:text-[2.5rem]">
+              <div className="text-[1rem] italic tracking-[-0.02em] sm:text-[1.35rem] md:text-[2.5rem]">
                 Room
               </div>
             </motion.div>
@@ -227,7 +227,7 @@ function Signage({ t }: { t: TreatmentId }) {
 function Slide({ t }: { t: TreatmentId }) {
   return (
     <Surface label="III. Screen" ratio="16 × 9">
-      <div className="relative aspect-[16/9] p-6 md:p-8">
+      <div className="relative aspect-[16/9] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -243,7 +243,7 @@ function Slide({ t }: { t: TreatmentId }) {
                 fontVariationSettings: t === "cadence" ? '"opsz" 96, "SOFT" 80' : '"opsz" 24, "SOFT" 50',
               }}
               transition={spring}
-              className="font-display text-[1.5rem] leading-[1.05] tracking-[-0.02em] md:text-[2.2rem]"
+              className="font-display text-[0.95rem] leading-[1.05] tracking-[-0.02em] sm:text-[1.5rem] md:text-[2.2rem]"
             >
               On the shape
               <br />
@@ -279,7 +279,7 @@ function Lanyard({ t }: { t: TreatmentId }) {
           animate={{ backgroundColor: t === "ribbon" ? "var(--color-vermilion)" : "var(--color-ink)" }}
           transition={spring}
         />
-        <div className="flex h-full flex-col p-5 pt-6 md:p-6 md:pt-7">
+        <div className="flex h-full flex-col p-3 pt-5 sm:p-5 sm:pt-6 md:p-6 md:pt-7">
           <div className="flex items-start justify-between">
             <Emblem active={t === "emblem"} size={30} />
             <span className="numeral">№ 041</span>
@@ -289,7 +289,7 @@ function Lanyard({ t }: { t: TreatmentId }) {
             <motion.div
               animate={{ fontWeight: t === "cadence" ? 500 : 400 }}
               transition={spring}
-              className="font-display text-[1.15rem] leading-tight md:text-[1.35rem]"
+              className="font-display text-[0.95rem] leading-tight sm:text-[1.15rem] md:text-[1.35rem]"
             >
               Amara
               <br />
@@ -392,7 +392,7 @@ export function Method() {
           </Reveal>
 
           <Reveal
-            className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-8"
             amount={0.1}
           >
             <RevealItem>

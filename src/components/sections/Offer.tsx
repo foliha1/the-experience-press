@@ -47,9 +47,9 @@ const ROWS: Row[] = [
     eyebrow: "The investment",
     body: (
       <>
-        Twenty-eight to forty thousand dollars — <span className="tabular-nums">$28,000 — $40,000</span> — depending on the number
-        of surfaces and the shape of the room. Framed, always, as an investment in the
-        evening itself.
+        Set at the outset, held to the end — sized to the number of surfaces and the shape
+        of the room. Framed, always, as an investment in the evening itself, never
+        apologized for and never justified.
       </>
     ),
     figure: (
