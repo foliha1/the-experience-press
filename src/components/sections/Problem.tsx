@@ -12,28 +12,21 @@ export function Problem() {
           </RevealItem>
           <div className="flex flex-col gap-8 md:col-span-8">
             <RevealItem as="p" className="font-display text-xl leading-[1.5] md:text-[1.6rem] md:leading-[1.45]">
-              You raised the money. You booked the room. You brought the right two hundred people
-              into it. There was a good idea at the center of the weekend — the kind of
-              idea that ought to be remembered by name a year later.
+              You raised the money. You booked the room. You brought in the right people — the ones whose time is the entire point — and you had something real to say to them.
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
-              And then, quietly, it dissolved. The invite looked like one thing. The stage looked
-              like another. The signage was a third voice entirely. The recap deck, sent Monday,
-              could have been anyone&rsquo;s event. What ought to have felt like a world — a place
-              with weather, with a temperature, with a point of view — arrived as a series of
-              rooms that happened to share a hashtag.
+              And then, quietly, it didn't land the way you saw it. Not a failure — a competent version of the thing. But the ambition thinned somewhere between the idea and the room. People were present without being held. It was attended. It was never felt.
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
-              The agency was too slow, and priced for a year you didn&rsquo;t have. The freelancer
-              was fast and gifted, and could not hold a whole world together across eight
-              surfaces and six vendors. You are not looking for another logo. You are looking for
-              the one thing that turns a weekend into a memory.
+              The cause is almost always the same, and almost never the content. The invite spoke in one voice, the stage in another, the signage in a third — nothing built to hold together around the single idea at the center. Attention leaked at every seam, and what should have felt like a world felt like a schedule.
+            </RevealItem>
+            <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
+              The agency was too slow, and priced for a year you didn't have. The freelancer made lovely parts that never became a whole. You are not looking for another logo. You are looking for a world — one idea, made unmistakable on every surface, so no one ever loses the thread.
             </RevealItem>
             <RevealItem className="pt-6">
               <div className="border-t border-rule pt-6">
                 <p className="max-w-[36ch] font-display text-2xl italic leading-[1.35] md:text-3xl">
-                  Most events are attended. Very few are remembered. The difference is almost
-                  always design — and almost never the logo.
+                  Most gatherings are attended. Very few are remembered — and only the remembered ones ever do their work. The difference is almost always design, and almost never the logo.
                 </p>
               </div>
             </RevealItem>
