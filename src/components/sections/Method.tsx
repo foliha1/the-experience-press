@@ -289,7 +289,7 @@ function Lanyard({ t }: { t: TreatmentId }) {
             <motion.div
               animate={{ fontWeight: t === "cadence" ? 500 : 400 }}
               transition={spring}
-              className="font-display text-[1.15rem] leading-tight md:text-[1.35rem]"
+              className="font-display text-[0.95rem] leading-tight sm:text-[1.15rem] md:text-[1.35rem]"
             >
               Amara
               <br />
