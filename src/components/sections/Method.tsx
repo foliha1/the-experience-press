@@ -37,6 +37,53 @@ const TREATMENTS: {
   },
 ];
 
+const INSTRUMENTS: {
+  name: string;
+  numeral: string;
+  description: string;
+}[] = [
+  {
+    name: "Thematic treatment",
+    numeral: "01",
+    description: "How the experience's idea takes visual form.",
+  },
+  {
+    name: "Typographic voice",
+    numeral: "02",
+    description: "The register everything is spoken in.",
+  },
+  {
+    name: "Graphic elements",
+    numeral: "03",
+    description: "The recurring parts that carry the theme.",
+  },
+  {
+    name: "Color",
+    numeral: "04",
+    description: "The system's emotional temperature.",
+  },
+  {
+    name: "Motion",
+    numeral: "05",
+    description: "How the elements come alive on screens and in space.",
+  },
+  {
+    name: "Programming",
+    numeral: "06",
+    description: "Visual cues that differentiate tracks, zones, and formats, so no one has to work to understand what's what.",
+  },
+  {
+    name: "Wayfinding",
+    numeral: "07",
+    description: "Orientation in space, so no one is ever lost.",
+  },
+  {
+    name: "Content-surface standards",
+    numeral: "08",
+    description: "How the system holds on the highest-stakes surfaces, mainstage and keynote included.",
+  },
+];
+
 const spring = { type: "spring" as const, stiffness: 140, damping: 22, mass: 0.9 };
 
 // --- Small building blocks shared across surfaces ------------------------------
@@ -319,14 +366,44 @@ export function Method() {
   return (
     <section className="px-6 py-24 md:px-16 md:py-40">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading numeral="№ 03" title="One system, many accents." />
+        <SectionHeading numeral="№ 03" title="One message, many instruments." />
 
-        <Reveal className="grid gap-10 md:grid-cols-12" amount={0.1}>
+        <Reveal className="max-w-5xl" amount={0.2}>
+          <RevealItem>
+            <p className="font-display text-[1.65rem] leading-[1.25] text-ink md:text-[2.25rem] lg:text-[3rem]">
+              Every experience has a result it needs to create in the people who attend.
+              The whole system exists to bring them into that moment and hold them there
+              at every turn — so the message stays whole from the invite to the exit.
+            </p>
+          </RevealItem>
+        </Reveal>
+
+        <Reveal className="mt-16 grid gap-10 md:mt-24 md:grid-cols-12" amount={0.15}>
+          <RevealItem className="md:col-span-3">
+            <span className="label">The instruments</span>
+          </RevealItem>
+          <RevealItem className="md:col-span-9">
+            <div className="grid gap-x-10 gap-y-7 md:grid-cols-2">
+              {INSTRUMENTS.map((instrument) => (
+                <div key={instrument.name} className="flex gap-4">
+                  <span className="numeral shrink-0">{instrument.numeral}</span>
+                  <div>
+                    <h3 className="font-display text-lg leading-tight">{instrument.name}</h3>
+                    <p className="mt-1 text-sm leading-[1.6] text-ink/75">{instrument.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="mt-10 max-w-[55ch] text-sm leading-[1.6] text-ink/75">
+              The system is modular across every surface and every scale, from 200 to 10,000.
+            </p>
+          </RevealItem>
+        </Reveal>
+
+        <Reveal className="mt-16 grid gap-10 md:mt-24 md:grid-cols-12" amount={0.1}>
           <RevealItem className="md:col-span-4">
             <p className="max-w-[36ch] text-lg leading-[1.7] text-ink/85">
-              The Sprint delivers a short kit of parts, tuned to flex across every surface
-              of the experience. Move between them below — the same world, reset for each
-              object it has to live on.
+              Move between the treatments below — the same world, reset for each object it has to live on.
             </p>
           </RevealItem>
 
