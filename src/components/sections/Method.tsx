@@ -141,7 +141,7 @@ function Surface({
 function Invite({ t }: { t: TreatmentId }) {
   return (
     <Surface label="I. Invite" ratio="5 × 7 in">
-      <div className="relative aspect-[5/7] p-6 md:p-8">
+      <div className="relative aspect-[5/7] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-start justify-between">
             <Emblem active={t === "emblem"} size={36} />
