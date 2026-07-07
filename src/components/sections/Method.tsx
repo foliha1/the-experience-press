@@ -243,7 +243,7 @@ function Slide({ t }: { t: TreatmentId }) {
                 fontVariationSettings: t === "cadence" ? '"opsz" 96, "SOFT" 80' : '"opsz" 24, "SOFT" 50',
               }}
               transition={spring}
-              className="font-display text-[1.5rem] leading-[1.05] tracking-[-0.02em] md:text-[2.2rem]"
+              className="font-display text-[0.95rem] leading-[1.05] tracking-[-0.02em] sm:text-[1.5rem] md:text-[2.2rem]"
             >
               On the shape
               <br />
