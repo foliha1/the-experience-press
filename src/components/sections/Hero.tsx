@@ -13,10 +13,12 @@ export function Hero() {
         </RevealItem>
       </Reveal>
 
-      <Reveal className="flex flex-1 items-center py-16 md:py-24" amount={0.2}>
+      <Reveal className="flex flex-1 flex-col justify-center py-16 md:py-24" amount={0.2}>
         <RevealItem as="h1" className="max-w-[16ch] font-display text-[clamp(2.75rem,9vw,9.25rem)] font-normal leading-[0.98] tracking-[-0.025em]">
-          The world is drowning in content.{" "}
-          <span className="italic text-taupe">Almost nothing</span> is unforgettable in a room.
+          We design the conditions your message needs to land.
+        </RevealItem>
+        <RevealItem as="p" className="mt-8 max-w-[52ch] font-display text-xl leading-[1.45] text-ink/85 md:text-[1.6rem] md:leading-[1.4]">
+          One intentional system, unifying every surface — so the message you came to deliver is the one they leave with.
         </RevealItem>
       </Reveal>
 
