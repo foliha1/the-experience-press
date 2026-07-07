@@ -15,7 +15,7 @@ export function Problem() {
               You raised the money. You booked the room. You brought in the right people — the ones whose time is the entire point — and you had something real to say to them.
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
-              And then, quietly, it didn't land the way you saw it. Not a failure — a competent version of the thing. But the ambition thinned somewhere between the idea and the room. People were present without being held. It was attended. It was never felt.
+              And then, quietly, it didn't land the way you saw it — not a failure, just a competent version of the thing, the ambition thinned somewhere between the idea and the room. People were present, but never held. Attended. Never felt.
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
               The cause is almost always the same, and almost never the content. The invite spoke in one voice, the stage in another, the signage in a third — nothing built to hold together around the single idea at the center. Attention leaked at every seam, and what should have felt like a world felt like a schedule.
@@ -26,7 +26,7 @@ export function Problem() {
             <RevealItem className="pt-6">
               <div className="border-t border-rule pt-6">
                 <p className="max-w-[36ch] font-display text-2xl italic leading-[1.35] md:text-3xl">
-                  Most gatherings are attended. Very few are remembered — and only the remembered ones ever do their work. The difference is almost always design, and almost never the logo.
+                  Most experiences are attended. Very few are remembered — and only the remembered ones ever do their work. The difference is almost always design, and almost never the logo.
                 </p>
               </div>
             </RevealItem>
