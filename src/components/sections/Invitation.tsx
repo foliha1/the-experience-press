@@ -15,7 +15,7 @@ export function Invitation() {
           </RevealItem>
 
           <RevealItem as="p" className="font-display text-2xl leading-[1.5] md:text-[1.9rem] md:leading-[1.4]">
-            If you are planning an evening — or a weekend, or a season of them — that ought
+            If you are planning an evening — or a summit, or a season of them — that ought
             to be remembered by name, we would be glad of a short conversation. Thirty
             minutes, no deck, no pitch. We&rsquo;ll tell you honestly whether the Sprint is
             the right shape for what you&rsquo;re building.

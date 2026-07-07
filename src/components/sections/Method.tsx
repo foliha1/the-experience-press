@@ -397,6 +397,9 @@ export function Method() {
             <p className="mt-10 max-w-[55ch] text-sm leading-[1.6] text-ink/75">
               The system is modular across every surface and every scale, from 200 to 10,000.
             </p>
+            <p className="mt-8 max-w-[55ch] text-sm leading-[1.6] text-ink/75 italic">
+              The intimacy of an evening, held at the scale of thousands.
+            </p>
           </RevealItem>
         </Reveal>
 

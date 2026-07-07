@@ -13,7 +13,7 @@ export function Problem() {
           <div className="flex flex-col gap-8 md:col-span-8">
             <RevealItem as="p" className="font-display text-xl leading-[1.5] md:text-[1.6rem] md:leading-[1.45]">
               You raised the money. You booked the room. You brought the right two hundred people
-              into it. There was a genuinely good idea at the center of the weekend — the kind of
+              into it. There was a good idea at the center of the weekend — the kind of
               idea that ought to be remembered by name a year later.
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
