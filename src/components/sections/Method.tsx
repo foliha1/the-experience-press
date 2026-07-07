@@ -203,10 +203,10 @@ function Signage({ t }: { t: TreatmentId }) {
               transition={spring}
               className="font-display leading-[0.95]"
             >
-              <div className="text-[1.75rem] tracking-[-0.02em] md:text-[2.5rem]">
+              <div className="text-[1rem] tracking-[-0.02em] sm:text-[1.35rem] md:text-[2.5rem]">
                 The Great
               </div>
-              <div className="text-[1.75rem] italic tracking-[-0.02em] md:text-[2.5rem]">
+              <div className="text-[1rem] italic tracking-[-0.02em] sm:text-[1.35rem] md:text-[2.5rem]">
                 Room
               </div>
             </motion.div>
