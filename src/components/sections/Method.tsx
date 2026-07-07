@@ -37,6 +37,53 @@ const TREATMENTS: {
   },
 ];
 
+const INSTRUMENTS: {
+  name: string;
+  numeral: string;
+  description: string;
+}[] = [
+  {
+    name: "Thematic treatment",
+    numeral: "01",
+    description: "How the experience's idea takes visual form.",
+  },
+  {
+    name: "Typographic voice",
+    numeral: "02",
+    description: "The register everything is spoken in.",
+  },
+  {
+    name: "Graphic elements",
+    numeral: "03",
+    description: "The recurring parts that carry the theme.",
+  },
+  {
+    name: "Color",
+    numeral: "04",
+    description: "The system's emotional temperature.",
+  },
+  {
+    name: "Motion",
+    numeral: "05",
+    description: "How the elements come alive on screens and in space.",
+  },
+  {
+    name: "Programming",
+    numeral: "06",
+    description: "Visual cues that differentiate tracks, zones, and formats, so no one has to work to understand what's what.",
+  },
+  {
+    name: "Wayfinding",
+    numeral: "07",
+    description: "Orientation in space, so no one is ever lost.",
+  },
+  {
+    name: "Content-surface standards",
+    numeral: "08",
+    description: "How the system holds on the highest-stakes surfaces, mainstage and keynote included.",
+  },
+];
+
 const spring = { type: "spring" as const, stiffness: 140, damping: 22, mass: 0.9 };
 
 // --- Small building blocks shared across surfaces ------------------------------
