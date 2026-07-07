@@ -5,7 +5,7 @@ export function Invitation() {
   const [hover, setHover] = useState(false);
 
   return (
-    <section className="px-6 pt-20 pb-16 md:px-16 md:pt-32 md:pb-20">
+    <section className="px-6 pt-24 pb-16 md:px-16 md:pt-40 md:pb-24">
       <div className="mx-auto max-w-3xl">
         <Reveal className="flex flex-col gap-12" amount={0.2}>
           <RevealItem className="flex items-center gap-4">
