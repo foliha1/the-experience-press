@@ -5,7 +5,7 @@ export function Problem() {
   return (
     <section className="px-6 py-24 md:px-16 md:py-40">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading numeral="№ 01" title="A gathering, and the blur that swallowed it." />
+        <SectionHeading numeral="№ 01" title={"The event you saw.\nThe one that showed up.\u00a0"} />
         <Reveal className="grid gap-10 md:grid-cols-12" amount={0.15}>
           <RevealItem className="md:col-span-4">
             <p className="label">The Problem</p>
