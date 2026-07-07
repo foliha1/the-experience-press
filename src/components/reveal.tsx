@@ -9,11 +9,11 @@ const container: Variants = {
 };
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 10 },
+  hidden: { opacity: 0, y: 8 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 120, damping: 22, mass: 0.9 },
+    transition: { type: "spring", stiffness: 140, damping: 22, mass: 0.9 },
   },
 };
 
