@@ -1,62 +1,40 @@
 import { SectionHeading } from "../section-heading";
 import { Reveal, RevealItem } from "../reveal";
 
-type Row = {
-  label: string;
-  eyebrow: string;
-  body: React.ReactNode;
-  figure?: React.ReactNode;
+type Tier = {
+  numeral: string;
+  name: string;
+  description: string;
+  investment: string;
+  note?: string;
+  dominant?: boolean;
 };
 
-const ROWS: Row[] = [
+const TIERS: Tier[] = [
   {
-    label: "I.",
-    eyebrow: "What it is",
-    body: (
-      <>
-        A complete experience identity — mark, voice, object, room — delivered as a working
-        kit of parts, ready to set on press and hang on a wall.
-      </>
-    ),
+    numeral: "I.",
+    name: "The Sprint",
+    description:
+      "The system, delivered — a complete kit of parts for the room, ready for your team to set on press, hang on a wall, and hand to a guest.",
+    investment: "$28,000 — $40,000",
+    note: "Fixed scope. Four to six weeks. Your team executes.",
+    dominant: true,
   },
   {
-    label: "II.",
-    eyebrow: "What&rsquo;s included",
-    body: (
-      <>
-        Every surface the guest touches, from the first envelope in the post to the last
-        note after they&rsquo;ve gone home — invite, arrival, signage, screen, print,
-        lanyard, menu, and the small book of standards that lets the world you built
-        survive the next producer.
-      </>
-    ),
+    numeral: "II.",
+    name: "Guided Rollout",
+    description:
+      "The system, plus our direction across your rollout. We hold the standard, walk the fittings, and keep the room coherent while your hands do the making.",
+    investment: "From $60,000",
+    note: "Season-long guidance. We direct; you produce.",
   },
   {
-    label: "III.",
-    eyebrow: "Shape &amp; timeline",
-    body: (
-      <>
-        A four- to six-week sprint. One senior team, three movements — read the room, set
-        the system, dress the surfaces — with a fitting in the middle and a handover at the
-        end. No committee. No drift.
-      </>
-    ),
-  },
-  {
-    label: "IV.",
-    eyebrow: "The investment",
-    body: (
-      <>
-        Set at the outset, held to the end — sized to the number of surfaces and the shape
-        of the room. Framed, always, as an investment in the evening itself, never
-        apologized for and never justified.
-      </>
-    ),
-    figure: (
-      <p className="font-display text-5xl leading-[1] tracking-[-0.02em] md:text-7xl">
-        $28,000 <span className="text-taupe">—</span> $40,000
-      </p>
-    ),
+    numeral: "III.",
+    name: "Full Activation",
+    description:
+      "Direction through the doors. Our managed team builds every surface, attends the evening, and leaves only when the last guest has gone home.",
+    investment: "By inquiry",
+    note: "A bespoke engagement, shaped to the room.",
   },
 ];
 
@@ -64,37 +42,67 @@ export function Offer() {
   return (
     <section className="px-6 py-24 md:px-16 md:py-40">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading numeral="№ 05" title="The Sprint, on one page." />
+        <SectionHeading numeral="№ 05" title="Ways to work." />
 
         <Reveal className="mb-16 md:mb-24" amount={0.3}>
-          <RevealItem as="p" className="max-w-[52ch] font-display text-2xl italic leading-[1.35] text-ink/90 md:text-[30px]">
-            A fixed scope, for a fixed investment. Set in weeks, not months — and priced the
-            way a good invoice reads, in words and figures both.
+          <RevealItem
+            as="p"
+            className="max-w-[52ch] font-display text-2xl italic leading-[1.35] text-ink/90 md:text-[30px]"
+          >
+            Three ways to bring the room into focus — from the kit in your hands to a team
+            at your side.
           </RevealItem>
         </Reveal>
 
-        <Reveal className="border-t border-rule" amount={0.1}>
-          {ROWS.map((row) => (
-            <RevealItem
-              key={row.label}
-              className="grid grid-cols-1 gap-4 border-b border-rule py-10 md:grid-cols-12 md:items-baseline md:gap-8 md:py-14"
+        <div className="border-t border-rule">
+          {TIERS.map((tier, index) => (
+            <Reveal
+              key={tier.numeral}
+              className="border-b border-rule"
+              amount={0.2}
             >
-              <div className="flex items-baseline gap-4 md:col-span-3">
-                <span className="numeral text-taupe">{row.label}</span>
-                <span
-                  className="label"
-                  dangerouslySetInnerHTML={{ __html: row.eyebrow }}
-                />
-              </div>
-              <div className="flex flex-col gap-6 md:col-span-9">
-                {row.figure}
-                <p className="max-w-[58ch] font-display text-xl leading-[1.45] md:text-2xl">
-                  {row.body}
-                </p>
-              </div>
-            </RevealItem>
+              <RevealItem
+                className={`grid grid-cols-1 gap-6 py-12 md:grid-cols-12 md:items-baseline md:gap-8 ${
+                  tier.dominant ? "md:py-24" : "md:py-16"
+                }`}
+              >
+                <div className="flex items-baseline gap-4 md:col-span-5">
+                  <span className="numeral text-taupe">{tier.numeral}</span>
+                  <h3
+                    className={`font-display leading-[1.05] tracking-[-0.02em] ${
+                      tier.dominant
+                        ? "text-4xl md:text-6xl lg:text-7xl"
+                        : "text-3xl md:text-5xl"
+                    }`}
+                  >
+                    {tier.name}
+                  </h3>
+                </div>
+
+                <div className="flex flex-col gap-4 md:col-span-4">
+                  <p className="max-w-[42ch] font-display text-lg leading-[1.45] text-ink/90 md:text-xl">
+                    {tier.description}
+                  </p>
+                  {tier.note && (
+                    <p className="label text-taupe">{tier.note}</p>
+                  )}
+                </div>
+
+                <div className="md:col-span-3 md:text-right">
+                  <p
+                    className={`font-display leading-[1] tracking-[-0.02em] tabular-nums ${
+                      tier.dominant
+                        ? "text-4xl md:text-5xl lg:text-6xl"
+                        : "text-3xl md:text-4xl"
+                    }`}
+                  >
+                    {tier.investment}
+                  </p>
+                </div>
+              </RevealItem>
+            </Reveal>
           ))}
-        </Reveal>
+        </div>
 
         <Reveal className="mt-12 flex flex-col gap-3 md:mt-16 md:flex-row md:items-baseline md:justify-between" amount={0.5}>
           <RevealItem>
