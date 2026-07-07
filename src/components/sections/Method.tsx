@@ -392,7 +392,7 @@ export function Method() {
           </Reveal>
 
           <Reveal
-            className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-8"
             amount={0.1}
           >
             <RevealItem>
