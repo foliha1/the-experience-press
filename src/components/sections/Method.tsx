@@ -227,7 +227,7 @@ function Signage({ t }: { t: TreatmentId }) {
 function Slide({ t }: { t: TreatmentId }) {
   return (
     <Surface label="III. Screen" ratio="16 × 9">
-      <div className="relative aspect-[16/9] p-6 md:p-8">
+      <div className="relative aspect-[16/9] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
