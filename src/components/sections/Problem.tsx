@@ -26,7 +26,7 @@ export function Problem() {
             <RevealItem className="pt-6">
               <div className="border-t border-rule pt-6">
                 <p className="max-w-[36ch] font-display text-2xl italic leading-[1.35] md:text-3xl">
-                  Most gatherings are attended. Very few are remembered — and only the remembered ones ever do their work. The difference is almost always design, and almost never the logo.
+                  Most experiences are attended. Very few are remembered — and only the remembered ones ever do their work. The difference is almost always design, and almost never the logo.
                 </p>
               </div>
             </RevealItem>
