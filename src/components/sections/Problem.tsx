@@ -29,11 +29,13 @@ export function Problem() {
               surfaces and six vendors. You are not looking for another logo. You are looking for
               the one thing that turns a weekend into a memory.
             </RevealItem>
-            <RevealItem className="pt-4">
-              <p className="border-l-2 border-vermilion pl-6 font-display text-2xl italic leading-[1.35] md:text-3xl">
-                Most events are attended. Very few are remembered. The difference is almost
-                always design — and almost never the logo.
-              </p>
+            <RevealItem className="pt-6">
+              <div className="border-t border-rule pt-6">
+                <p className="max-w-[36ch] font-display text-2xl italic leading-[1.35] md:text-3xl">
+                  Most events are attended. Very few are remembered. The difference is almost
+                  always design — and almost never the logo.
+                </p>
+              </div>
             </RevealItem>
           </div>
         </Reveal>
