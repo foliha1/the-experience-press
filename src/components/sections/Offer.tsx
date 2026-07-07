@@ -110,7 +110,7 @@ export function Offer() {
           </RevealItem>
           <RevealItem className="md:max-w-[46ch]">
             <p className="font-display italic text-lg leading-[1.5] text-ink/80 md:text-xl">
-              Six sprints a season. When they&rsquo;re taken, they&rsquo;re taken — the room
+              Six sprints a quarter. When they&rsquo;re taken, they&rsquo;re taken — the room
               deserves the same attention the guests will.
             </p>
           </RevealItem>
