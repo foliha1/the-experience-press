@@ -190,7 +190,7 @@ function Invite({ t }: { t: TreatmentId }) {
 function Signage({ t }: { t: TreatmentId }) {
   return (
     <Surface label="II. Signage" ratio="36 × 24 in">
-      <div className="relative aspect-[3/2] p-6 md:p-8">
+      <div className="relative aspect-[3/2] p-3 sm:p-5 md:p-8">
         <div className="flex h-full flex-col">
           <div className="flex items-start justify-between">
             <span className="label">This way</span>
