@@ -279,7 +279,7 @@ function Lanyard({ t }: { t: TreatmentId }) {
           animate={{ backgroundColor: t === "ribbon" ? "var(--color-vermilion)" : "var(--color-ink)" }}
           transition={spring}
         />
-        <div className="flex h-full flex-col p-5 pt-6 md:p-6 md:pt-7">
+        <div className="flex h-full flex-col p-3 pt-5 sm:p-5 sm:pt-6 md:p-6 md:pt-7">
           <div className="flex items-start justify-between">
             <Emblem active={t === "emblem"} size={30} />
             <span className="numeral">№ 041</span>
