@@ -38,7 +38,7 @@ export function SolvedWorld() {
             </RevealItem>
             <RevealItem as="p" className="max-w-[62ch] text-lg leading-[1.7] text-ink/85">
               People feel it before they arrive. They carry it home in a printed keepsake
-              small enough to sit on a desk. Six months later, someone at another dinner
+              small enough to sit on a desk. Six months later, someone at another stage
               describes it in a single sentence and the whole table nods — because the world
               you made was coherent enough to be named.
             </RevealItem>

@@ -32,7 +32,7 @@ const TIERS: Tier[] = [
     numeral: "III.",
     name: "Full Activation",
     description:
-      "Direction through the doors. Our managed team builds every surface, attends the evening, and leaves only when the last guest has gone home.",
+      "Direction through the doors. Our managed team builds every surface and holds the standard from load-in to the last light down.",
     investment: "By inquiry",
     note: "A bespoke engagement, shaped to the room.",
   },
