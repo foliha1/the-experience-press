@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as StudioRouteImport } from './routes/studio'
 import { Route as SprintRouteImport } from './routes/sprint'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work.index'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 
+const StudioRoute = StudioRouteImport.update({
+  id: '/studio',
+  path: '/studio',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SprintRoute = SprintRouteImport.update({
   id: '/sprint',
   path: '/sprint',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/partners': typeof PartnersRoute
   '/sprint': typeof SprintRoute
+  '/studio': typeof StudioRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/': typeof WorkIndexRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/partners': typeof PartnersRoute
   '/sprint': typeof SprintRoute
+  '/studio': typeof StudioRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work': typeof WorkIndexRoute
 }
@@ -60,27 +68,49 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/partners': typeof PartnersRoute
   '/sprint': typeof SprintRoute
+  '/studio': typeof StudioRoute
   '/work/$slug': typeof WorkSlugRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/partners' | '/sprint' | '/work/$slug' | '/work/'
+  fullPaths:
+    | '/'
+    | '/partners'
+    | '/sprint'
+    | '/studio'
+    | '/work/$slug'
+    | '/work/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/partners' | '/sprint' | '/work/$slug' | '/work'
-  id: '__root__' | '/' | '/partners' | '/sprint' | '/work/$slug' | '/work/'
+  to: '/' | '/partners' | '/sprint' | '/studio' | '/work/$slug' | '/work'
+  id:
+    | '__root__'
+    | '/'
+    | '/partners'
+    | '/sprint'
+    | '/studio'
+    | '/work/$slug'
+    | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PartnersRoute: typeof PartnersRoute
   SprintRoute: typeof SprintRoute
+  StudioRoute: typeof StudioRoute
   WorkSlugRoute: typeof WorkSlugRoute
   WorkIndexRoute: typeof WorkIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/studio': {
+      id: '/studio'
+      path: '/studio'
+      fullPath: '/studio'
+      preLoaderRoute: typeof StudioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sprint': {
       id: '/sprint'
       path: '/sprint'
@@ -123,6 +153,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PartnersRoute: PartnersRoute,
   SprintRoute: SprintRoute,
+  StudioRoute: StudioRoute,
   WorkSlugRoute: WorkSlugRoute,
   WorkIndexRoute: WorkIndexRoute,
 }

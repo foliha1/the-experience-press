@@ -144,7 +144,7 @@ function SiteHeader() {
             Work
           </Link>
           <Link
-            to="/sprint"
+            to="/studio"
             className="link-spot hover:link-spot-hover label flex min-h-11 items-center"
           >
             Studio
