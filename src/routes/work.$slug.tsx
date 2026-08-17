@@ -73,12 +73,12 @@ function CaseStudyPage() {
         <RevealItem as="h2" className="label text-taupe">
           Services
         </RevealItem>
-        <ul className="mt-6 border-t border-ink/15">
+        <ul className="mt-6 border-t border-rule">
           {entry.services.map((service) => (
             <RevealItem
               as="li"
               key={service}
-              className="flex min-h-[44px] items-center border-b border-ink/15 py-4 font-sans text-base"
+              className="flex min-h-[44px] items-center border-b border-rule py-4 font-sans text-base"
             >
               {service}
             </RevealItem>
@@ -107,22 +107,22 @@ function CaseStudyPage() {
         ))}
       </div>
 
-      <Reveal as="section" className="mt-20 border-t border-ink/15 pt-8 md:mt-28" amount={0.2}>
+      <Reveal as="section" className="mt-20 border-t border-rule pt-8 md:mt-28" amount={0.2}>
         <RevealItem as="p" className="label text-taupe">
           {entry.credit}
         </RevealItem>
       </Reveal>
 
       {(previous || next) && (
-        <nav className="mt-16 grid gap-0 border-t border-ink/15 md:mt-20 md:grid-cols-2">
+        <nav className="mt-16 grid gap-0 border-t border-rule md:mt-20 md:grid-cols-2">
           {previous && (
             <Link
               to="/work/$slug"
               params={{ slug: previous.slug }}
-              className="group flex min-h-[44px] flex-col justify-center border-b border-ink/15 py-6 md:border-r md:pr-8"
+              className="group flex min-h-[44px] flex-col justify-center border-b border-rule py-6 md:border-r md:pr-8"
             >
               <span className="label text-taupe">Previous</span>
-              <span className="mt-2 font-display text-xl leading-tight transition-colors group-hover:text-spot">
+              <span className="mt-2 font-display text-xl leading-tight transition-colors group-hover:text-vermilion">
                 {previous.client}
               </span>
             </Link>
@@ -131,10 +131,10 @@ function CaseStudyPage() {
             <Link
               to="/work/$slug"
               params={{ slug: next.slug }}
-              className="group flex min-h-[44px] flex-col justify-center border-b border-ink/15 py-6 md:items-end md:pl-8"
+              className="group flex min-h-[44px] flex-col justify-center border-b border-rule py-6 md:items-end md:pl-8"
             >
               <span className="label text-taupe">Next</span>
-              <span className="mt-2 font-display text-xl leading-tight transition-colors group-hover:text-spot">
+              <span className="mt-2 font-display text-xl leading-tight transition-colors group-hover:text-vermilion">
                 {next.client}
               </span>
             </Link>
