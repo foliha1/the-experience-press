@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -125,15 +126,80 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+function SiteHeader() {
+  return (
+    <header className="sticky top-0 z-40 border-b border-rule bg-paper/95 backdrop-blur-[2px]">
+      <div className="mx-auto flex max-w-[84rem] items-center justify-between px-6 py-5 md:px-10">
+        <Link
+          to="/"
+          className="font-display text-base tracking-[-0.01em] text-ink md:text-lg"
+        >
+          Oleeha &amp; Co.
+        </Link>
+        <nav className="flex items-center gap-6 md:gap-9">
+          <Link
+            to="/work"
+            className="link-spot hover:link-spot-hover label flex min-h-11 items-center"
+          >
+            Work
+          </Link>
+          <Link
+            to="/sprint"
+            className="link-spot hover:link-spot-hover label flex min-h-11 items-center"
+          >
+            Studio
+          </Link>
+          <a
+            href="mailto:felix@oleeha.co"
+            className="link-spot hover:link-spot-hover label flex min-h-11 items-center"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-rule">
+      <div className="mx-auto flex max-w-[84rem] flex-col gap-4 px-6 py-10 md:flex-row md:items-baseline md:justify-between md:px-10">
+        <a
+          href="mailto:felix@oleeha.co"
+          className="link-spot hover:link-spot-hover font-display text-base"
+        >
+          felix@oleeha.co
+        </a>
+        <p className="numeral">Oleeha &amp; Co. — Experience Design</p>
+      </div>
+    </footer>
+  );
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const bare = pathname.startsWith("/partners");
 
   return (
     <QueryClientProvider client={queryClient}>
       <LenisProvider>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        {bare ? (
+          /* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */
+          <Outlet />
+        ) : (
+          <div className="flex min-h-screen flex-col bg-paper text-ink">
+            <SiteHeader />
+            <div className="flex-1">
+              {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+              <Outlet />
+            </div>
+            <SiteFooter />
+          </div>
+        )}
       </LenisProvider>
     </QueryClientProvider>
   );
 }
+
