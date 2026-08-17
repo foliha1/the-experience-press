@@ -108,11 +108,11 @@ function StudioPage() {
         <RevealItem as="p" className="label">
           Elsewhere
         </RevealItem>
-        <div className="mt-8">
+        <div className="mt-8 border-t border-rule">
           <RevealItem>
             <Link
               to="/sprint"
-              className="group block border-t border-rule py-6 transition-colors duration-300 ease-out hover:border-ink/30 md:py-7"
+              className="group block border-b border-rule py-6 transition-colors duration-300 ease-out hover:border-ink/30 md:py-7"
             >
               <div className="flex flex-col items-start gap-1 md:flex-row md:items-baseline md:gap-8">
                 <span className="font-display text-2xl leading-snug tracking-[-0.01em] transition-transform duration-300 ease-out group-hover:translate-x-2 md:text-3xl">
@@ -127,7 +127,7 @@ function StudioPage() {
           <RevealItem>
             <Link
               to="/work"
-              className="group block border-b border-t border-rule py-6 transition-colors duration-300 ease-out hover:border-ink/30 md:py-7"
+              className="group block border-b border-rule py-6 transition-colors duration-300 ease-out hover:border-ink/30 md:py-7"
             >
               <div className="flex flex-col items-start gap-1 md:flex-row md:items-baseline md:gap-8">
                 <span className="font-display text-2xl leading-snug tracking-[-0.01em] transition-transform duration-300 ease-out group-hover:translate-x-2 md:text-3xl">
