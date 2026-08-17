@@ -37,7 +37,7 @@ function PartnersPage() {
             When the work is sold and nobody senior is free.
           </RevealItem>
           <RevealItem as="p" className="mt-8 max-w-[54ch] text-lg leading-relaxed text-ink md:text-xl md:leading-relaxed">
-            Their client presents in three weeks. The work needs a senior voice. Your best creative director is already on three other accounts, and hiring another one is a nine-month decision you cannot make in nine days.
+            Your client presents in three weeks. The work needs a senior voice. Your best creative director is already on three other accounts, and hiring another one is a nine-month decision you cannot make in nine days.
           </RevealItem>
         </Reveal>
 
@@ -152,7 +152,7 @@ function PartnersPage() {
               US Eastern mornings, 9 AM to 12 PM ET, Monday to Friday. Based in Europe so that window is protected.
             </RevealItem>
             <RevealItem as="p" className="text-base leading-relaxed text-ink/80">
-              Async by default. Their client, their logo.
+              Async by default. Your client, your logo. I work under your brand in front of your client, introduced however you want to introduce me.
             </RevealItem>
           </div>
         </Reveal>
