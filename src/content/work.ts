@@ -56,41 +56,68 @@ export const work: CaseStudy[] = [
   },
   {
     slug: "29029",
-    client: "29029 Everesting",
-    title: "An endurance event that had to feel like a summit",
-    year: "DRAFT: 2022",
-    role: "DRAFT: Design direction",
-    services: [
-      "Experience identity",
-      "Signage and on-mountain graphics",
-      "Screen and stage surfaces",
-      "Participant artefacts",
-    ],
+    client: "29029",
+    title: "A brand built once, then stewarded",
+    year: "2017, and 2025 to present",
+    role: "Creative Director",
     summary:
-      "DRAFT: A multi-day endurance event where the design had to carry people through the hardest hours — legible in the dark, warm at the finish.",
+      "I designed the 29029 identity in 2017. Eight years later I came back as their creative director, to sharpen what was there and build the brands that came next.",
+    services: [
+      "Brand identity",
+      "Founder brand strategy",
+      "Brand codification",
+      "Digital product design",
+      "Creative direction",
+    ],
     sections: [
       {
-        heading: "The brief",
+        heading: "The first chapter",
         paragraphs: [
-          "DRAFT: The event lives outdoors, at altitude, across a full day and night. Every surface had to work while tired, in the cold, at a glance.",
-          "DRAFT: Engagement scope and dates to be confirmed.",
+          "In 2017 I was the designer on 29029 at Brand Apart. We ran the full brand exercise, developed a range of territories, and presented them to Marc and his team.",
+          "The mark they chose is the mark they still use. The core system built around it is the one running today.",
         ],
       },
       {
-        heading: "The approach",
+        heading: "Coming back",
         paragraphs: [
-          "DRAFT: One system, tuned for conditions: heavy contrast where it mattered, restraint everywhere else, and a set of repeating marks that told you how far you had come.",
-          "DRAFT: Component list and production partners to be confirmed.",
+          "In 2025 the relationship started again, this time independently. I came in as creative director and primary creative lead, which in practice means two jobs at once.",
+          "The first is stewardship, keeping the existing brand sharp as it stretches across more surfaces than it was designed for. The second is expansion, building new brands for new lines of business.",
         ],
       },
       {
-        heading: "The result",
+        heading: "The founder brand",
         paragraphs: [
-          "DRAFT: Results, participant feedback, and any figures are unverified and intentionally omitted.",
+          "Marc Hodulich is not separate from 29029, so his brand needed the same rigor as the company's. I positioned him as the Cartographer of Limits, a founder who builds environments that change people rather than events that entertain them.",
+          "The work included a transformation framework called the Peak Loop, ten brand pillars, the strategic thinking underneath it, and the full asset system and site that carry it.",
+        ],
+      },
+      {
+        heading: "29029 Triple",
+        paragraphs: [
+          "A mini ultra Marc and a small group are taking on. I built the brand for it, sized to sit inside the 29029 world without competing with it.",
+        ],
+      },
+      {
+        heading: "The participant dashboard",
+        paragraphs: [
+          "A digital home for participants to log their climbs, track elevation, record the events they have finished, and earn points against a shared system. Designed as a product, not a page.",
+        ],
+      },
+      {
+        heading: "Codifying the brand",
+        paragraphs: [
+          "The hardest problem was not visual. Marc carried the standard in his head, which meant the brand held when he was in the room and drifted when he was not.",
+          "I worked through structured interviews, artifact review, and decision autopsies to turn his instinct into traceable rules. Not a guidelines document. A decision engine the team can actually use.",
+        ],
+      },
+      {
+        heading: "Where it stands",
+        paragraphs: [
+          "The current phase is an audit of every existing asset, and a refinement of the brand standards that govern them.",
         ],
       },
     ],
-    credit: "DRAFT: Design and direction, Oleeha & Co. Credit line to be confirmed.",
+    credit: "Identity created in 2017 as a designer at Brand Apart. Creative direction from 2025 onward through Oleeha & Co.",
   },
   {
     slug: "coca-cola",
